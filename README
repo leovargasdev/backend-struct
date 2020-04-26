@@ -1,29 +1,48 @@
-## Estrutura de um Projeto NodeJS + Typescript
+<h1 align="center">
+  <img alt="logo" title="logo" src=".github/logo.png" width="700px" />
+</h1>
 
-### Sequencia de comandos
+<h4 align = "center">
+  Estrutura base para um projeto Backend
+</h4>
 
-# Inicializando o package.json
-yarn init -y
+## :rocket: Tecnologias
 
-yarn add express
-yarn add @types/express -D
+-  [NodeJS](https://nodejs.org/en/)
+-  [Docker](https://docs.docker.com/)
+-  [Prettier](https://prettier.io/)
+-  [ESLint](https://eslint.org/)
+-  [YARN](https://yarnpkg.com/)
+-  [Typescript](https://www.typescriptlang.org/)
+-  [Express](https://expressjs.com/pt-br/)
 
-yarn add typescript -D
+## 📥 Comandos usados para a construção do Projeto
 
-# Gera o tsconfig.json
-yarn tsc --init
+```bash
 
-# Faz o reload no desenvolvimento
-yarn add ts-node-dev -D
+  # Inicializando o package.json
+  $ yarn init -y
 
-# Instalar a extenção editorconfig
+  $ yarn add express && yarn add typescript @types/express -D
 
-# Instalar a extenção eslint
-yarn add eslint -D
-yarn eslint --init
-yarn add -D @typescript-eslint/eslint-plugin@latest eslint-config-airbnb-base@latest eslint-plugin-import@^2.20.1 @typescript-eslint/parser@latest
+  # Gerando o tsconfig.json
+  $ yarn tsc --init
 
-#Reconhecer os imports dos .ts
-yarn add -D eslint-import-resolver-typescript
+  # Pacote para executar o reload em projetos typescript
+  $ yarn add ts-node-dev -D
 
-yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
+  $ yarn add eslint -D
+  $ yarn eslint --init
+  $ yarn add -D @typescript-eslint/eslint-plugin@latest eslint-config-airbnb-base@latest eslint-plugin-import@^2.20.1 @typescript-eslint/parser@latest
+
+  # Reconhecer os imports dos .ts
+  $ yarn add -D eslint-import-resolver-typescript prettier eslint-config-prettier eslint-plugin-prettier
+
+  # texto
+  $
+
+```
+## Extenções VScode
+
+### editorconfig
+### eslint
