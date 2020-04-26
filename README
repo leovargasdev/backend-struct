@@ -1,0 +1,29 @@
+## Estrutura de um Projeto NodeJS + Typescript
+
+### Sequencia de comandos
+
+# Inicializando o package.json
+yarn init -y
+
+yarn add express
+yarn add @types/express -D
+
+yarn add typescript -D
+
+# Gera o tsconfig.json
+yarn tsc --init
+
+# Faz o reload no desenvolvimento
+yarn add ts-node-dev -D
+
+# Instalar a extenção editorconfig
+
+# Instalar a extenção eslint
+yarn add eslint -D
+yarn eslint --init
+yarn add -D @typescript-eslint/eslint-plugin@latest eslint-config-airbnb-base@latest eslint-plugin-import@^2.20.1 @typescript-eslint/parser@latest
+
+#Reconhecer os imports dos .ts
+yarn add -D eslint-import-resolver-typescript
+
+yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
