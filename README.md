@@ -30,7 +30,8 @@
 
   # Pacote para executar o reload em projetos typescript
   $ yarn add ts-node-dev -D
-
+  
+  # Pacotes do eslint e prettier
   $ yarn add eslint -D
   $ yarn eslint --init
   $ yarn add -D @typescript-eslint/eslint-plugin@latest eslint-config-airbnb-base@latest eslint-plugin-import@^2.20.1 @typescript-eslint/parser@latest
@@ -38,11 +39,8 @@
   # Reconhecer os imports dos .ts
   $ yarn add -D eslint-import-resolver-typescript prettier eslint-config-prettier eslint-plugin-prettier
 
-  # texto
-  $
-
 ```
-## Extenções VScode
+## 💻 Extensões do VScode
 
 ### editorconfig
 ### eslint
