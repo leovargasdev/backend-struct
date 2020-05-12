@@ -4,6 +4,8 @@ import CreateUserService from '../services/CreateUserService';
 
 const usersRouter = Router();
 
+import ensureAuthenticated from '../middlewares/ensureAuthenticated';
+
 usersRouter.post('/', async (request, response) => {
   const { email, password, name } = request.body;
 
@@ -16,6 +18,12 @@ usersRouter.post('/', async (request, response) => {
   });
 
   delete user.password;
+
+  return response.json(user);
+});
+
+usersRouter.get('/', ensureAuthenticated, async (request, response) => {
+  const user = request.user;
 
   return response.json(user);
 });
