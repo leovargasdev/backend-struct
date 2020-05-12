@@ -54,6 +54,8 @@
   $ yarn typeorm migration:create -n CreateUsers
   # Executanto a migration
   $ yarn typeorm migration:run
+  $ yarn add jsonwebtoken
+  $ yarn add -D @types/jsonwebtoken
 
 ```
 ## 💻 Extensões do VScode
