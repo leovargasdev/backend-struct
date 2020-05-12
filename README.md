@@ -56,6 +56,10 @@
   $ yarn typeorm migration:run
   $ yarn add jsonwebtoken
   $ yarn add -D @types/jsonwebtoken
+  $ yarn add express-async-errors multer
+  $ yarn add -D @types/multer
+  # Criando o campo Avatar na tabela de Users
+  $ yarn typeorm migration:create -n CreateFieldAvatarInUsers
 
 ```
 ## 💻 Extensões do VScode

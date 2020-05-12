@@ -2,6 +2,7 @@ import express, { Request, Response, NextFunction } from 'express';
 import 'reflect-metadata';
 import 'express-async-errors';
 
+import uploadConfig from './config/upload';
 import AppError from './errors/AppError';
 import routes from './routes';
 import './database';
@@ -9,6 +10,7 @@ import './database';
 const app = express();
 
 app.use(express.json());
+app.use('/files', express.static(uploadConfig.directory));
 app.use(routes);
 // Centralizando os erros da aplicação
 app.use((err: Error, request: Request, response: Response, _: NextFunction) => {
